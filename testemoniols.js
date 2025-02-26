@@ -34,8 +34,8 @@ if(index===testimonials.length){
     index=0;
 }
 
-// setTimeout(()=>{
-//     updateTest();
-// },3000)
+setTimeout(()=>{
+    updateTest();
+},3000)
 }
-// updateTest();
+updateTest();
