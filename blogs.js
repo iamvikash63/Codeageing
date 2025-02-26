@@ -52,7 +52,7 @@ blogcarthtml+=` <div class="blog">
                 <div class="content">
                     <h2>${blog_tags.heading}</h2>
                     <p>${blog_tags.content_min} </p>
-                    <p><a href="blog1.html">Read more</a></p>
+                    <p><a href="/All Blogs/blog1.html">Read more</a></p>
                 </div>
                 </div>`;
 
