@@ -56,14 +56,9 @@ height: 60px;
 .main-list a{
     color: black;
     text-decoration: none;
-   
+    font-weight: 600;
 }
 
-.main-ul li:hover{
-   font-weight: 500;
-    
-    
-}
 
 .main-hd{
     display: flex;

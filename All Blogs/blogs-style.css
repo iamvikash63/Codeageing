@@ -1,4 +1,4 @@
-/* 
+
 body {
 
     line-height: 1.6;
@@ -33,7 +33,7 @@ article {
 }
 
 
-ul {
+.blogs-ul{
     list-style-type: disc;
     margin-left: 20px;
 }
@@ -53,4 +53,4 @@ summary{
 }
 .summary li{
     font-weight: 500;
-} */
+}
