@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (count < target) {
             count += 5; // Increment count step
             counterElement.innerHTML = `${count} +`;
-            console.log(count);
+          
       
             setTimeout(updateCounter, speed);
         } else {
@@ -43,4 +43,15 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+});
+
+//popup 
+const menu=document.querySelector('.js-blogs-popup');
+const dropmenu=document.querySelector('.dropdown');
+menu.addEventListener('mouseover',()=>{
+dropmenu.style.display='block';
+});
+
+menu.addEventListener('mouseleave',()=>{
+    dropmenu.style.display='none';
 });
