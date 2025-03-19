@@ -24,34 +24,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-// quiries questions's answer
-document.addEventListener('DOMContentLoaded', function() {
-    const headers = document.querySelectorAll('.questions');
-
-    headers.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const isOpen = content.style.display === 'block';
-
-            document.querySelectorAll('.answer').forEach(item => {
-                item.style.display = 'none';
+document.querySelectorAll('.quick-scroll').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+  
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+  
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop - 50, // Adjust offset for better alignment
+                behavior: 'smooth'
             });
-
-            if (!isOpen) {
-                content.style.display = 'block';
-            }
-        });
+        }
     });
-});
+  });
 
-//popup 
-const menu=document.querySelector('.js-blogs-popup');
-const dropmenu=document.querySelector('.dropdown');
-menu.addEventListener('mouseover',()=>{
-dropmenu.style.display='block';
-});
-
-menu.addEventListener('mouseleave',()=>{
-    dropmenu.style.display='none';
-});

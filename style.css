@@ -292,9 +292,9 @@ border: 0.01px solid gray;
 }
 .content a{
     text-decoration: none;
-    background-color: #E04826;
-    color: white;
-    border-radius: 8px;
+   
+    color: rgb(245, 48, 48);
+  text-decoration: underline;
 }
 
 
@@ -428,6 +428,7 @@ gap: 20px;
 .clients-reviews-container{
     padding: 40px;
     background-color: #192733;
+    overflow: hidden;
 
 }
 .clients-review-heading h1{
@@ -501,44 +502,7 @@ text-align: center;
 }
 
 /* quiries section */
-.quiries-section{
-    padding: 30px;
-    width: 100%;
-    box-sizing: border-box;
-    max-height: max-content;
-}
-.quiiries-heading{
-    padding: 10px;
-    text-align: center;
-}
-.quiries-container{
-   
-    max-height: max-content;
-    text-align: center;
- display: flex;
- flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
-}
-.questions{
-    font-size: larger;
-    cursor: pointer;
-   
-}
-.quiries-icon{
-    padding: 10px;
-    font-size: larger;
-    color:#E04826;
-    cursor: pointer;
-}
-.quiries1{
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid gray;
-    width: 800px;
-}
+
 
 /* last div css */
 .last-div{
@@ -547,11 +511,112 @@ text-align: center;
     justify-content: space-evenly;
     align-items: center;
     border-top: 1px solid red;
+    overflow: hidden;
 }
 .last-div-img img{
-    height: 250px;
+    width: 500px;
+
+    height: auto;
 }
 
+/* contact */
+.contact-img{
+    width: 30px;
+    display: inline-block;
+}
+.form-submit{
+    margin-top: 10px;
+}
+.submit-btn{
+    width: 120px;
+}
+.contact-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+
+}
+.contact-p{
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+.contact-container{
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+   padding: 30px;
+    margin: 30px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.contact-content,.contact-form{
+    width: 400px;
+}
+.form-sec1{
+    display: flex;
+ width: 100%;
+ gap: 40px;
+}
+.your-name,.your-email{
+    width: 100%;
+}
+.form-input{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #344C36;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+.form-title{
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    font-weight: 400;
+}
+.about-span{
+    color: #E04826;
+    
+}
+.contact-span{
+    color: #E04826;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.btn{
+    background-color: #E04826;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #E04826;
+   
+}
+button{
+    background-color:  #5E17EB;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+.circle{
+    height: 28px;
+    background-color: white;
+    width: 28px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: larger;
+font-weight: 600;
+}
 
 /*footer section*/
 
